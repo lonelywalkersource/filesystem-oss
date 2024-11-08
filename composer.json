@@ -1,0 +1,17 @@
+{
+    "name": "lonelywalkersource/filesystem-oss",
+    "description": "Package description here.",
+    "license": "MIT",
+    "require": {
+        "league/flysystem": "3.8.0",
+        "aliyuncs/oss-sdk-php": "^2.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "LonelyWalkerSource\\FilesystemOss\\": "src"
+        }
+    },
+    "scripts": {
+        "post-merge": "composer install"
+    }
+}
