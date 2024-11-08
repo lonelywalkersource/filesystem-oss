@@ -12,7 +12,7 @@ $ composer require lonelywalkersource/filesystem-oss
 ```php
 use League\Flysystem\Filesystem;
 use OSS\OssClient;
-use LonelyWalkerSource\FilesystemOss\OssAdapterr;
+use LonelyWalkerSource\FilesystemOss\OssAdapter;
 
 $accessId = 'xxxxxx';
 $accessKey = 'xxxxxx';
