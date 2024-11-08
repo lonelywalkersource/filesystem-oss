@@ -20,7 +20,7 @@ use League\Flysystem\Visibility;
 use OSS\Core\OssException;
 use OSS\OssClient;
 
-class OssAdapterr implements FilesystemAdapter
+class OssAdapter implements FilesystemAdapter
 {
     protected PathPrefixer $prefix;
 
