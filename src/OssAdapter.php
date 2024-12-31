@@ -37,9 +37,12 @@ class OssAdapter implements FilesystemAdapter
         protected bool $isCname = false,
         protected bool $debug = false,
         protected string $cdnDomain = '',
-                            $prefix = '',
+        string $prefix = '',
         array $options = []
     ) {
+        if ($this->ssl) {
+            $this->client->setUseSSL(true);
+        }
         $this->prefix = new PathPrefixer($prefix, DIRECTORY_SEPARATOR);
         $this->options = array_merge($this->options, $options);
     }
